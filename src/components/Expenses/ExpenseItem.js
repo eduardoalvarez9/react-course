@@ -9,8 +9,8 @@ const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
-    setTitle('new value');
-    console.log(title);
+    let newValue = prompt('Escribe nuevo nombre:');
+    setTitle(newValue);
   }
 
   return (
